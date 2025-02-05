@@ -1,0 +1,40 @@
+---
+title: homepage
+stylesheet: Homepage
+layout: "base.njk"
+---
+
+<div class="header">
+    <h2>Title Here</h2>
+</div>
+
+<div class="Main_Text">
+    <h1 class="Text_Middle">
+        Hello and welcome to this blog
+    </h1>
+</div>
+<!--
+    {% if collections.important | length > 0 %}
+    <div class="important-article">
+        <div class="Page_Title">
+            <h1>important article</h1>
+        </div>
+        <div class="left-card">
+            {%- for post in collections.important -%}
+            {% include "article-snippet.njk" %}
+            {%- endfor -%}
+        </div>
+    </div>
+    {% endif %}
+    
+    <div class="featured-article">
+        <div class="Page_Title">
+            <h1>featured article</h1>
+        </div>
+        <div class="left-card">
+            {%- for post in collections.featured | reverse -%}
+            {% include "article-snippet.njk" %}
+            {%- endfor -%}
+        </div>
+    </div>
+    -->

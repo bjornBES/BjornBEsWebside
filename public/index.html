@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>homepage</title>
+
+    <link rel="stylesheet" href="../style/Homepage.css">
+    <link rel="stylesheet" href="../style/Footer.css">
+    <link rel="stylesheet" href="../style/Navbar.css">
+    <link rel="stylesheet" href="../style/pageContents.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+
+    <div class="Navbar">
+    <ul>
+        <div class="ulleft">
+            <li class="liLeft"><a class="raw" href="/">Home</a></li>
+            <li class="liLeft"><a class="raw" href="/blog/">blog</a></li>
+            <li class="liLeft"><a class="raw" href="/About/">About</a></li>
+            <li class="liLeft">
+                <div class="dropdown">
+                    <a class="raw">More</a>
+                    <div class="dropdown-content">
+                        <a class="raw">Test</a>
+                        <a class="raw">Test</a>
+                        <a class="raw">Test</a>
+                    </div>
+                </div>
+            </li>
+            <li class="liLeft"><a class="raw">test</a></li>
+        </div>
+        <div class="ulright">
+            <li class="liRight"><a class="button">Test T</a></li>
+        </div>
+    </ul>
+</div>
+    <main>
+        
+<div class="header">
+    <h2>Title Here</h2>
+</div>
+
+<div class="Main_Text">
+    <h1 class="Text_Middle">
+        Hello and welcome to this blog
+    </h1>
+</div>
+<!--
+    
+    
+    <div class="featured-article">
+        <div class="Page_Title">
+            <h1>featured article</h1>
+        </div>
+        <div class="left-card"></div>
+    </div>
+    -->
+    </main>
+    <footer>
+    <div class="footer">
+        <div class="footer_leftcolumn">
+            <h2>test this is a footer in leftcolumn</h2>
+        </div>
+        <div class="footer_middlecolumn">
+            <h2>test this is a footer in middlecolumn</h2>
+        </div>
+        <div class="footer_rightcolumn">
+            <h2>test this is a footer in rightcolumn</h2>
+        </div>
+    </div>
+</footer>
+
+    <script>
+        if (window.netlifyIdentity) {
+          window.netlifyIdentity.on("init", (user) => {
+            if (!user) {
+              window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+              });
+            }
+          });
+        }
+      </script>
+</body>
+
+</html>

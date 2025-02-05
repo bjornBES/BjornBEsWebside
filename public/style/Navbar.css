@@ -1,0 +1,116 @@
+.Navbar {
+    font-size: 25px;
+    color: white;
+    background-color: #333;
+    z-index: 2;
+    padding-bottom: 100px;
+}
+
+ul
+{
+    background-color: #333;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    z-index: 2;
+}
+.ulleft {
+    right: 0px;
+}
+.ulright {
+    left: 0px;
+}
+
+li
+{
+    display: inline;
+    z-index: 2;
+}
+.liLeft
+{
+    border-left: 1px solid #bbb;
+    float: left;
+}
+.liRight
+{
+    border-right: 1px solid #bbb;
+    float: right;
+}
+li:last-child
+{
+    border-right: none;
+}
+li:first-child
+{
+    border-left: none;
+}
+
+.button
+{
+    
+}
+a i.button
+{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    min-width: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.raw
+{
+
+}
+
+a .raw{
+    display: block;
+    padding: 15px;
+    text-align: center;
+    min-width: 100px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+li:hover a:hover
+{
+    color: white;
+    background-color: #111;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    padding: 15px;
+    padding-top: 30px;
+    background-color: #333;
+    position: fixed;
+    width: 160px;
+    min-width: 160px;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    background-color: #333;
+    color: white;
+}
+
+.dropdown:hover {
+    color: black;
+    background-color: #111;
+}

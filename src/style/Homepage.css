@@ -1,0 +1,59 @@
+.Page_Title {
+    padding: 30px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    text-align: center;
+    color: white;
+    background: black;
+}
+
+.Main_Text {
+    margin-top: 20px;
+    text-align: center;
+
+    background-color: black;
+    color: white;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.featured-article {
+    margin-top: 20px;
+    background-color: black;
+}
+
+div.featured-article div.Page_Title h1 {
+    font-weight: 600;
+}
+
+.important-article {
+    margin-top: 20px;
+    background-color: black;
+    font-weight: 400;
+}
+
+div.important-article div.Page_Title h1 {
+    font-weight: 700;
+}
+
+.left-card {
+    position: relative;
+    left: 25%;
+    width: 50%;
+}
+
+.left-card div a div h2 {
+    display: inline;
+    text-align: start;
+}
+
+.left-card div a div h5 {
+    position: relative;
+    bottom: 19px;
+}
+
+@media only screen and (max-width: 600px) {
+    .Text_Box h3 {
+        font-size: 30px;
+    }
+}

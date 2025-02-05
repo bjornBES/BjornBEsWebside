@@ -1,0 +1,24 @@
+.footer {
+    padding: 20px;
+    color: white;
+    background: #111;
+    margin-top: 20px;
+
+    display: flex;
+}
+
+.footer .footer_leftcolumn {
+    width: 33.333%;
+    float: left;
+}
+
+.footer .footer_middlecolumn {
+    width: 33.333%;
+    text-align: center;
+}
+
+.footer .footer_rightcolumn {
+    width: 33.333%;
+    float: right;
+    text-align: end;
+}
