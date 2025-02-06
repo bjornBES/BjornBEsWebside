@@ -8,6 +8,4 @@ tags:
 ---
 Hello world
 
-
-
 This is my new website
