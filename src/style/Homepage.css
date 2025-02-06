@@ -17,36 +17,57 @@
     overflow: hidden;
 }
 
-.featured-article {
-    margin-top: 20px;
-    background-color: black;
+.article-left-card
+{
+    margin-top: 50px;
+    margin-left: 10px;
+    width: 49%;
+    float: left;
+}
+.article-right-card
+{
+    width: 49%;
+    margin-top: 50px;
+    margin-right: 10px;
+    float: right;
 }
 
+.newest-article {
+    margin-top: 50px;
+    padding-bottom: 100px;
+    background-color: #1f1f1f;
+}
+div.newest-article div.Page_Title h1 {
+    margin-top: 25px;
+    font-weight: 600;
+}
+
+.featured-article {
+    margin-top: 50px;
+    background-color: #1f1f1f;
+}
 div.featured-article div.Page_Title h1 {
+    margin-top: 25px;
     font-weight: 600;
 }
 
 .important-article {
-    margin-top: 20px;
-    background-color: black;
-    font-weight: 400;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    background-color: #1f1f1f;
 }
-
 div.important-article div.Page_Title h1 {
+    margin-top: 25px;
     font-weight: 700;
 }
 
 .left-card {
     position: relative;
-    left: 25%;
-    width: 50%;
 }
-
 .left-card div a div h2 {
     display: inline;
     text-align: start;
 }
-
 .left-card div a div h5 {
     position: relative;
     bottom: 19px;

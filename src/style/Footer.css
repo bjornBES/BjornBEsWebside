@@ -3,8 +3,8 @@
     color: white;
     background: #111;
     margin-top: 20px;
-
     display: flex;
+    flex: 1;
 }
 
 .footer .footer_leftcolumn {
@@ -21,4 +21,9 @@
     width: 33.333%;
     float: right;
     text-align: end;
+}
+
+.footerSpace
+{
+    height: 65vh;
 }

@@ -1,89 +1,110 @@
+.NavbarButton {}
+.NavbarButton button
+{
+    position: relative;
+    width: calc(100vw - 40px);
+    height: 50px;
+}
+
 .Navbar {
     font-size: 25px;
     color: white;
-    background-color: #333;
     z-index: 2;
-    padding-bottom: 100px;
+    width: calc(100vw - 40px);
 }
 
-ul
-{
+ul {
+    position: relative;
+    height: 60px;
+    padding: 10px;
     background-color: #333;
     opacity: 0.9;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 10px;
-    margin: 0;
     z-index: 2;
 }
+
 .ulleft {
-    right: 0px;
-}
-.ulright {
+    position: relative;
     left: 0px;
 }
 
-li
-{
+.ulright {
+    position: relative;
+}
+
+ul div.ulright li.liRightButton button.button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 10px;
+    opacity: 0.9;
+    z-index: 2;
+}
+.ulright .liRightButton .button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: white;
+    padding: 10px;
+}
+
+li {
     display: inline;
     z-index: 2;
 }
-.liLeft
-{
-    border-left: 1px solid #bbb;
-    float: left;
-}
-.liRight
-{
+
+.liLeft {
     border-right: 1px solid #bbb;
+    float: left;
+    align-items: center;
+}
+
+.liRight {
+    border-left: 1px solid #bbb;
     float: right;
+    align-items: center;
 }
-li:last-child
-{
-    border-right: none;
-}
-li:first-child
-{
+
+.liRight:last-child {
     border-left: none;
 }
 
-.button
-{
-    
+.liLeft:last-child {
+    border-right: none;
 }
-a i.button
-{
-    position: absolute;
-    height: 100px;
-    width: 100px;
+
+.liRightButton {
+    float: right;
+}
+
+.liRight .button {
+    position: relative;
+
+    padding: 25px;
+    padding-top: 0px;
+
+    margin: 25px;
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    align-self: center;
+}
+
+.raw {
     display: block;
     padding: 15px;
-    text-align: center;
     min-width: 100px;
     color: white;
     text-align: center;
     text-decoration: none;
 }
 
-.raw
-{
-
-}
-
-a .raw{
-    display: block;
-    padding: 15px;
-    text-align: center;
-    min-width: 100px;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-
-li:hover a:hover
-{
+li:hover a:hover {
     color: white;
     background-color: #111;
 }
@@ -113,4 +134,59 @@ li:hover a:hover
 .dropdown:hover {
     color: black;
     background-color: #111;
+}
+
+
+@keyframes slideUp {
+    from {
+        transform: translateY(0%);
+    }
+    nr1 {
+        padding-bottom: 100px;
+    }
+    nr2 {
+        padding-bottom: 75px;
+    }
+    nr3 {
+        padding-bottom: 50px;
+    }
+    nr4 {
+        padding-bottom: 25px;
+    }
+    to {
+        transform: translateY(-80%);
+        padding-bottom: 0px;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-80%);
+        padding-bottom: 0px;
+    }
+    nr1 {
+        padding-bottom: 25px;
+    }
+    nr3 {
+        padding-bottom: 50px;
+    }
+    nr4 {
+        padding-bottom: 75px;
+    }
+    to {
+        transform: translateY(0%);
+        padding-bottom: 100px;
+    }
+}
+
+#NavBar
+{
+    transition: all 0.5s ease-in-out;
+}
+.hidden {
+    animation: slideUp 0.5s forwards;
+}
+
+.visible {
+    animation: slideDown 0.5s forwards;
 }

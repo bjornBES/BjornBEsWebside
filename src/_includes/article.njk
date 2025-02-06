@@ -1,0 +1,23 @@
+---
+layout: 'base.njk'
+stylesheet: article
+path: "../"
+---
+
+<article class="main-article">
+    <div class="container">
+        <div class="article-title">
+            <h1>
+                {{ title }}
+            </h1>
+        </div>
+        <div class="article-subtitle">
+            {{ author }}
+        </div>
+        <div class="contents">
+            <h3>
+                {{ content | safe}}
+            </h3>
+        </div>
+    </div>
+</article>

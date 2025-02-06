@@ -1,0 +1,28 @@
+---
+title: Blog
+stylesheet: Blog
+layout: "base.njk"
+---
+
+<div class="header">
+    <h2>Title Here</h2>
+</div>
+
+<div class="Row">
+    <div class="Leftcolumn">
+        {%-for post in collections.post | reverse-%}
+        {% include "article-snippet.njk" %}
+        {%- endfor -%}
+    </div>
+    <div class="Rightcolumn">
+        <div class="card">
+            <h3>h3 Card</h3>
+            <p>P Card</p>
+        </div>
+        <div class="card">
+            <h3>h3 Card</h3>
+            <p>P Card</p>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,78 @@
+.Row {
+    padding-top: 5%;
+}
+
+div.Leftcolumn {
+    padding: 25px;
+
+    background-color: #111;
+    display: inline;
+    float: left;
+    width: calc(70% - 25px);
+    overflow: hidden;
+}
+
+div.Rightcolumn {
+    background-color: #111;
+    position: relative;
+    float: right;
+    display: inline;
+    width: 25%;
+    padding: 25px;
+    overflow: hidden;
+}
+
+/* Add a card effect for articles */
+.card {
+    color: white;
+    background-color: black;
+    padding: 20px;
+    margin-bottom: 30px;
+    min-height: 100px;
+}
+
+.card:last-child {
+    margin-bottom: 0px;
+}
+
+.articleCards h2 {
+    position: relative;
+    display: inline;
+}
+
+.articleCards h5 {
+    position: relative;
+    bottom: 19px;
+    float: right;
+}
+
+/* Clear floats after the columns */
+div.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div.card a:link {
+    color: white;
+}
+
+div.card a:hover {
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+div.card a:active {
+    color: blue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
