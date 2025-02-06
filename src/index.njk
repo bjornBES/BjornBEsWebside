@@ -16,7 +16,8 @@ layout: "base.njk"
     </h1>
 </div>
 
-<div class = "article-left-card">
+{% if collections.featured | length > 0 %}
+<div class="article-left-card">
     <div class="featured-article">
         <div class="Page_Title">
             <h1>featured article</h1>
@@ -41,8 +42,8 @@ layout: "base.njk"
         </div>
     </div>
     {% endif %}
-    <div class = "newest-article">
-        <div class = "Page_Title">
+    <div class="newest-article">
+        <div class="Page_Title">
             <h1>newest article</h1>
         </div>
         <div class="left-card">
@@ -51,3 +52,26 @@ layout: "base.njk"
         </div>
     </div>
 </div>
+{% else %}
+{% if collections.important | length > 0 %}
+<div class="important-article">
+    <div class="Page_Title">
+        <h1>important article</h1>
+    </div>
+    <div class="left-card">
+        {%- for post in collections.important -%}
+        {% include "article-snippet.njk" %}
+        {%- endfor -%}
+    </div>
+</div>
+{% endif %}
+<div class="newest-article">
+    <div class="Page_Title">
+        <h1>newest article</h1>
+    </div>
+    <div class="left-card">
+        {% set post = collections.post | last %}
+        {% include "article-snippet.njk" %}
+    </div>
+</div>
+{% endif %}
